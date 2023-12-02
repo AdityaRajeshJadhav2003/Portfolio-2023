@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>
+          Hello sir/madam thank you for visiting my website.We understand that
+          the digital realm is filled with countless options and destinations,
+          and we are honored that you chose to spend your valuable time
+          exploring our website. Your visit signifies your trust and curiosity
+          in what we have to offer, and we are committed to delivering an
+          exceptional experience.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><i class="bx bx-map"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>A-16, Samarth Krupa Nagar, Aswale Mala, Nashik Road, Nashik</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="bx bxs-phone"></i></div>
+            <div class="text">
+              <h3>Mobile</h3>
+              <p>9370144795</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="bx bx-envelope"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>adityajadhav1582@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form method="post">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" id="name" />
+              <span>Full Name</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" required="required" id="email" />
+              <span>Email</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" required="required" id="sub" />
+              <span>Subject</span>
+            </div>
+
+            <div class="inputBox" id="msg">
+              <textarea required="required"></textarea>
+              <span>Type your Messege...</span>
+            </div>
+
+            <div class="inputBox" id="btn">
+              <input type="submit" name="" value="send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var sub = document.getElementById('sub').value;
+      var msg = document.getElementById('msg').value;
+      var body= 'name:' +name + '<br/> email:' +email + '<br/> subject:' + sub + '<br/> message:' +msg ;
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "dummmmyacccc@gmail.com",
+        Password: "apcownkdoacffdmv",
+        To: "dummmmyacccc@gmail.com",
+        From: email,
+        Subject: sub,
+        Body: body,
+      }).then((message) => alert(message));
+    });
+  </script>
+</html>
