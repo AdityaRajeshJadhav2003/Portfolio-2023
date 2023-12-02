@@ -1,30 +1,31 @@
-# Rapid Reveal - Personalized News App
+# Aditya Jadhav's Portfolio
 
-Rapid Reveal is a dynamic news application that tailors news content based on user preferences. Users can customize their news feed by choosing specific categories, ensuring a personalized and relevant news experience.
+Welcome to my personal portfolio! This static website showcases my skills, projects, and journey in the world of web development.
 
-## Features
+## Live Link 
 
-- **Personalized News Feed:** Customize your news feed by selecting categories of interest.
-- **Responsive Design:** Enjoy a seamless experience across various devices with a responsive and user-friendly design.
-- **Interactive UI:** Intuitive user interface for effortless navigation and exploration of news articles.
-
-## Screenshots
-
-![Rapid Reveal Screenshot](https://github.com/AdityaRajeshJadhav2003/Portfolio-2023/assets/121690879/57b6d658-beef-4ff2-bb72-abcd8a7b67e7)
-
-## How to Use
-
-1. Clone the repository: `git clone https://github.com/AdityaRajeshJadhav2003/RapidReveal.git`
-2. Open the project in your preferred code editor.
-3. Customize the news categories and styling as per your requirements.
-4. Launch the app and explore the personalized news feed.
+https://portfolio-2023-sigma-ivory.vercel.app/
 
 ## Technologies Used
 
-- React.js
-- Bootstrap
+- HTML
 - CSS
-- News API (Provide the API you used for news content)
+- JavaScript
+- Bootstrap
+
+## Features
+
+- **Responsive Design:** The portfolio is designed to provide a seamless experience across various devices.
+- **Project Showcase:** Explore my featured projects and learn about the technologies used in each.
+- **About Me:** Get to know me better through the "About Me" section.
+- **Contact:** Reach out to me through the provided contact information.
+
+## How to Use
+
+1. Clone the repository: `git clone https://github.com/AdityaRajeshJadhav2003/Portfolio-2023.git`
+2. Open the project in your preferred code editor.
+3. Customize the content, update project details, and personalize the portfolio according to your preferences.
+4. Launch the portfolio and showcase your skills and projects.
 
 ## Contributions
 
@@ -36,5 +37,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize the README to better suit your project and provide additional information as needed.
+**Note:** Replace `<Add URL to Screenshot Image>` with the actual URL of the screenshot you want to include.
 
+Feel free to tailor the README to better suit your portfolio's content and design. If there are specific sections or details you'd like to highlight, feel free to add or modify as needed.
